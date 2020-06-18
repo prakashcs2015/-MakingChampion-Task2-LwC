@@ -1,0 +1,16 @@
+<template>
+    <lightning-card  variant="Narrow" title="Filter with account Created date" icon-name="custom:custom24">
+        <div class="slds-p-left_medium slds-p-right_medium">
+            <lightning-input type="date" name="createdDate" value = {startDate} label="Select start Date"  onchange={handleFromDateChange}> </lightning-input>
+            </div>
+            <div class="slds-p-left_medium slds-p-right_medium">
+            <lightning-input type="date" name="modifiedDate" value = {endDate} label="Select End Date" onchange={handleToDateChange}></lightning-input></br>
+        </div>
+            <div class="slds-align_absolute-center">
+                <lightning-button variant="brand-outline" label="Apply Filters" title="Primary action with lighter look"
+                onclick={handleApplyFilter} class="slds-m-left_x-small"></lightning-button>&nbsp;&nbsp;&nbsp;
+                <lightning-button variant="brand-outline" label="Clear Filters" title="Primary action with lighter look"
+                onclick={clearFilter} class="slds-m-left_x-small"></lightning-button>
+            </div>
+</lightning-card>
+</template>
